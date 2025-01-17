@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUIZ TIME</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <img src="teacher1.png" alt="Teacher" class="teacher-image1">
+  <img src="teacher2.png" alt="Teacher" class="teacher-image2">
+  <img src="student.png" alt="Student" class="student-image1">
+  <div class="label">WELCOME TO TECH QUIZ</div>
+  <div class="start_btn"><button>START QUIZ</button></div>
+  <div class="info_box">
+    <div class="info-title"><span>RULES OF THE QUIZ</span></div>
+    <div class="info-list">
+      <div class="info">1. You will have only <span>10 seconds</span> per question.</div>
+      <div class="info">2. Once you select your answer, it can't be undone.</div>
+      <div class="info">3. You can't select any option once time goes off.</div>
+      <div class="info">4. You can't exit from the Quiz until completion.</div>
+      <div class="info">5. You'll get points on the basis of your correct answers.</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">EXIT QUIZ</button>
+      <button class="restart">CONTINUE</button>
+    </div>
+  </div>
+
+  <div class="quiz_box">
+    <header>
+      <div class="title">QUIZ MARATHON</div>
+      <div class="timer">
+        <div class="time_left_txt">TIME LEFT</div>
+        <div class="timer_sec">10</div>
+      </div>
+      <div class="time_line"></div>
+    </header>
+    <section>
+      <div class="que_text"></div>
+      <div class="option_list"></div>
+    </section>
+
+    <footer>
+      <div class="total_que"></div>
+      <button class="next_btn">NEXT</button>
+    </footer>
+  </div>
+
+  <div class="result_box">
+    <div class="cup">
+      <img class="cup-image">
+    </div>
+    <div class="complete_text">You've completed the Quiz!</div>
+    <div class="score_text"></div>
+    <div class="buttons">
+      <button class="restart">REPLAY QUIZ</button>
+      <button class="show_correct_answers">SHOW CORRECT ANSWERS</button>
+      <button class="show_incorrect_answers">SHOW INCORRECT ANSWERS</button>
+      <button class="quit">QUIT QUIZ</button>
+    </div>
+    <div class="overflow-hidden-container">
+       <div class="correctanswers" id="correctAnswersContainer">
+          <h2>CORRECT ANSWERS</h2>
+          <div class="correct_answers_list"></div>
+       </div>
+       <div class="incorrectanswers" id="incorrectAnswersContainer">
+          <h2>INCORRECT ANSWERS</h2>
+          <div class="incorrect_answers_list"></div>
+       </div>
+    </div>
+  </div>
+  <script src="questions.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
